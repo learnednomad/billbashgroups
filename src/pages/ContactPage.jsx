@@ -109,15 +109,15 @@ const ContactPage = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Office</h3>
                 <div className="flex items-start text-gray-600 mb-3">
                   <MapPin className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
-                  <span>3008/3007 GRA, Western Bypass, Kano, Nigeria</span>
+                  <span>No.3008/3007 GRA, Western Bypass, Kano, Nigeria</span>
                 </div>
                 <div className="flex items-center text-gray-600 mb-3">
                   <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+2348091692888 / +8618840079240 </span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                  <span>info@billbashgroup.com</span>
+                  <span>bashahmad99@yahoo.com</span>
                 </div>
               </div>
               
