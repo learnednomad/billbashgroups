@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import TruckAboutImage from "../assets/images/truck-imports.jpeg";
+
 
 const AboutSection = () => {
   return (
@@ -43,7 +45,7 @@ const AboutSection = () => {
             <img 
               alt="Collage of Bill Bash Group's services: real estate, trucks, farming, spare parts"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
-             src="https://images.unsplash.com/photo-1646156262471-a37c4a8eddb2" />
+             src={TruckAboutImage} />
             <div className="absolute -top-8 -left-8 w-24 h-24 bg-primary/10 rounded-full -z-10 hidden md:block"></div>
             <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-gray-200/30 rounded-lg -z-10 hidden md:block"></div>
           </motion.div>
