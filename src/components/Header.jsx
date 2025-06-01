@@ -84,7 +84,7 @@ const Header = () => {
               <div className="w-6 h-6 border-2 border-white"></div>
             </div>
             <span className={`font-bold text-xl ${isScrolled ? "text-primary" : "text-white"}`}>
-              BILL BASH GROUP
+              BILLBASH GROUP
             </span>
           </Link>
 
