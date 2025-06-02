@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -12,6 +11,8 @@ import {
   NavigationMenuContent,
   NavigationMenuLink as RadixNavigationMenuLink
 } from "@/components/ui/navigation-menu";
+
+const logoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/35ba3e5a-041e-4a6f-be03-9bbb09825892/78a0791dfec2f91bbcc9448784156e5b.png";
 
 const NavLinkItem = ({ to, children, isScrolled, closeMobileMenu }) => (
   <NavLink
