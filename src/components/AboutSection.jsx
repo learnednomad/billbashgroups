@@ -28,7 +28,7 @@ const AboutSection = () => {
             <p className="text-gray-600 leading-relaxed mb-8">
               Whether you're seeking premium properties, sourcing quality trucks, investing in sustainable agriculture, or in need of durable spare parts, Bill Bash Group delivers with professionalism, transparency, and a deep understanding of your needs.
             </p>
-            <Button asChild className="bg-primary text-primary-foreground hover:bg-highlight hover:text-highlight-foreground text-base px-8 py-3">
+            <Button asChild className="bg-primary text-white hover:bg-primary/90 text-base px-8 py-3">
               <Link to="/about">
                 Learn More About Us
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -47,7 +47,7 @@ const AboutSection = () => {
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
              src={TruckAboutImage} />
             <div className="absolute -top-8 -left-8 w-24 h-24 bg-primary/10 rounded-full -z-10 hidden md:block"></div>
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-muted rounded-lg -z-10 hidden md:block"></div>
+            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-gray-200/30 rounded-lg -z-10 hidden md:block"></div>
           </motion.div>
         </div>
       </div>

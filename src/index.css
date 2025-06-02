@@ -1,71 +1,52 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 30 33% 96%; /* Warm Sand / Light Beige */
-    --foreground: 225 30% 23%; /* Slate Gray */
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 225 30% 23%; /* Slate Gray */
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 225 30% 23%; /* Slate Gray */
-
-    --primary: 223 64% 35%; /* Navy Blue */
-    --primary-foreground: 0 0% 100%; /* White */
-
-    --secondary: 225 30% 23%; /* Slate Gray */
-    --secondary-foreground: 0 0% 100%; /* White */
-
-    --accent: 80 61% 34%; /* Olive Green */
-    --accent-foreground: 0 0% 100%; /* White */
-
-    --highlight: 21 89% 43%; /* Rust Orange */
-    --highlight-foreground: 0 0% 100%; /* White */
-
-    --muted: 225 10% 96%; /* Lighter Slate Gray for muted backgrounds */
-    --muted-foreground: 225 10% 45%; /* Darker Slate Gray for muted text */
-
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 358 81% 51%; /* Bill Bash Red */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%; /* White */
-
-    --border: 225 10% 88%; /* Light Slate Gray for borders */
-    --input: 225 10% 88%; /* Light Slate Gray for input borders */
-    --ring: 223 64% 35%; /* Navy Blue for focus rings */
-
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 358 81% 51%; /* Bill Bash Red for focus rings */
     --radius: 0.5rem;
   }
  
   .dark {
-    /* Keeping dark mode fairly similar, but adjusting to new palette logic if needed */
-    --background: 225 30% 10%; /* Darker Slate Gray */
-    --foreground: 30 33% 90%; /* Lighter Warm Sand */
-    --card: 225 30% 15%;
-    --card-foreground: 30 33% 90%;
-    --popover: 225 30% 15%;
-    --popover-foreground: 30 33% 90%;
-
-    --primary: 223 64% 45%; /* Brighter Navy Blue for dark mode */
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 225 30% 25%;
-    --secondary-foreground: 0 0% 100%;
-
-    --accent: 80 61% 44%; /* Brighter Olive Green */
-    --accent-foreground: 0 0% 100%;
-
-    --highlight: 21 89% 53%; /* Brighter Rust Orange */
-    --highlight-foreground: 0 0% 100%;
-
-    --muted: 225 30% 20%;
-    --muted-foreground: 225 10% 65%;
-
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 225 30% 30%;
-    --input: 225 30% 30%;
-    --ring: 223 64% 45%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 358 81% 51%; 
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 358 81% 51%;
   }
 }
 
@@ -83,7 +64,7 @@
 }
 
 .hero-overlay-gradient {
-  background: linear-gradient(0deg, rgba(31, 58, 147, 0.7) 0%, rgba(31, 58, 147, 0.3) 50%, rgba(31, 58, 147,0.1) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0,0,0,0.1) 100%);
 }
 
 .business-card {
@@ -97,33 +78,4 @@
 /* Ensure inputs and textareas have visible focus states */
 input:focus, textarea:focus, select:focus, button:focus {
   @apply ring-2 ring-ring ring-offset-2;
-}
-
-.bg-warm-sand {
-  background-color: #F5F1EA;
-}
-
-.text-slate-gray {
-  color: #2E3A59;
-}
-
-.text-olive-green {
-  color: #6B8E23;
-}
-
-.border-slate-gray {
-  border-color: #2E3A59;
-}
-
-.bg-olive-green {
-  background-color: #6B8E23;
-}
-.hover\:bg-rust-orange:hover {
-  background-color: #C1440E;
-}
-.hover\:text-rust-orange:hover {
-  color: #C1440E;
-}
-.text-rust-orange {
-  color: #C1440E;
 }
