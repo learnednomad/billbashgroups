@@ -17,7 +17,7 @@ const Contact = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <p className="text-gray-700 max-w-3xl mx-auto">
-            Have questions or want to learn more about Dangote Group? Our team is here to help you.
+            Have questions or want to learn more about BillBash Group? Our team is here to help you.
           </p>
         </motion.div>
 

@@ -115,7 +115,7 @@ const FarmingPage = () => {
                   <li className="flex items-center"><Sprout className="h-6 w-6 mr-3 text-green-300" /> Reduced chemical usage</li>
                   <li className="flex items-center"><Sprout className="h-6 w-6 mr-3 text-green-300" /> Support for local ecosystems</li>
                 </ul>
-                <Button asChild variant="outline" className="mt-8 border-white text-white hover:bg-white/20 hover:text-white px-8 py-3">
+                <Button asChild variant="outline" className="mt-8 border-white text-black hover:bg-white/20 hover:text-white px-8 py-3">
                   <Link to="/contact">Learn About Our Initiatives</Link>
                 </Button>
               </motion.div>

@@ -98,7 +98,7 @@ const Header = () => {
                   <NavLinkItem to="/about" isScrolled={isScrolled}>About Us</NavLinkItem>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={isScrolled ? "text-gray-800" : "text-blue-950"}>
+                  <NavigationMenuTrigger className={isScrolled ? "text-gray-800" : "text-black"}>
                     Our Businesses
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -106,7 +106,7 @@ const Header = () => {
                       {businessLinks.map(link => (
                         <li key={link.to}>
                           <RadixNavigationMenuLink asChild>
-                            <Link to={link.to} className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-blue-900 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                            <Link to={link.to} className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                               <div className="text-sm font-medium leading-none">{link.title}</div>
                               <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                                 {link.description}
