@@ -7,29 +7,30 @@ import { Calendar, ArrowRight } from "lucide-react";
 const newsData = [
   {
     id: 1,
-    title: "Dangote Refinery Begins Production of Diesel and Aviation Fuel",
+    title: "Bill Bash Group Launches New Housing Development in Abuja",
     date: "May 20, 2025",
-    excerpt: "Africa's largest oil refinery has commenced production of diesel and aviation fuel, marking a significant milestone in the continent's energy sector.",
-    image: "Aerial view of Dangote Refinery with processing units and storage facilities",
+    excerpt: "Bill Bash Group has unveiled a new real estate project featuring affordable housing units and commercial spaces, aiming to meet the growing demand in Nigeria’s capital.",
+    image: "Aerial view of a residential estate under construction with green spaces",
     delay: 0
   },
   {
     id: 2,
-    title: "Dangote Cement Expands Operations to East Africa",
+    title: "Bill Bash Group Expands Truck Import Operations to Port Harcourt",
     date: "April 15, 2025",
-    excerpt: "Dangote Cement announces new $500 million investment to expand its manufacturing capacity in Tanzania and Ethiopia.",
-    image: "Dangote cement plant construction with workers and equipment",
+    excerpt: "To meet rising logistics demands, Bill Bash Group has extended its truck importation services to Port Harcourt, offering a wider range of heavy-duty trucks and faster delivery timelines.",
+    image: "Shipping containers with imported trucks being offloaded at a port",
     delay: 0.1
   },
   {
     id: 3,
-    title: "Dangote Foundation Launches $100M Healthcare Initiative",
+    title: "Bill Bash Farms Introduces High-Yield Maize and Poultry Projects",
     date: "March 8, 2025",
-    excerpt: "The Dangote Foundation has launched a new healthcare initiative aimed at improving medical infrastructure across rural communities in Africa.",
-    image: "Dangote Foundation healthcare facility with medical staff and patients",
+    excerpt: "As part of its commitment to food security, Bill Bash Group has launched new farming initiatives focused on hybrid maize and poultry production across rural communities.",
+    image: "Farmers working in a maize field and a modern poultry facility",
     delay: 0.2
   }
 ];
+
 
 const News = () => {
   return (
