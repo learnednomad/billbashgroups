@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -12,6 +11,8 @@ import {
   NavigationMenuContent,
   NavigationMenuLink as RadixNavigationMenuLink
 } from "@/components/ui/navigation-menu";
+
+const logoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/35ba3e5a-041e-4a6f-be03-9bbb09825892/78a0791dfec2f91bbcc9448784156e5b.png";
 
 const NavLinkItem = ({ to, children, isScrolled, closeMobileMenu }) => (
   <NavLink
@@ -80,12 +81,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
-            <div className="w-10 h-10 bg-primary flex items-center justify-center mr-2">
-              <div className="w-6 h-6 border-2 border-white"></div>
-            </div>
-            <span className={`font-bold text-xl ${isScrolled ? "text-primary" : "text-white"}`}>
-              BILLBASH GROUP
-            </span>
+            <img
+                src={logoUrl}
+                alt="BILLBASH Logo"
+                className={`h-8 md:h-14 w-auto mr-2 transition duration-300 ${
+                    isScrolled ? "filter-none" : "filter brightness-0 invert"
+                }`}
+            />
+
           </Link>
 
           <div className="hidden lg:block">
