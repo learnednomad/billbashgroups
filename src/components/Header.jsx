@@ -11,8 +11,7 @@ import {
   NavigationMenuContent,
   NavigationMenuLink as RadixNavigationMenuLink
 } from "@/components/ui/navigation-menu";
-
-const logoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/35ba3e5a-041e-4a6f-be03-9bbb09825892/78a0791dfec2f91bbcc9448784156e5b.png";
+import logo from "../assets/images/bbg-logo.png";
 
 const NavLinkItem = ({ to, children, isScrolled, closeMobileMenu }) => (
   <NavLink
@@ -82,7 +81,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
             <img
-                src={logoUrl}
+                src={logo}
                 alt="BILLBASH Logo"
                 className={`h-8 md:h-14 w-auto mr-2 transition duration-300 ${
                     isScrolled ? "filter-none" : "filter brightness-0 invert"

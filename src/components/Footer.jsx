@@ -3,8 +3,7 @@ import React from "react";
 import { Facebook, Twitter, Linkedin, Instagram, Youtube, ArrowRight, Home, Truck, Leaf, Wrench, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
-const logoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/35ba3e5a-041e-4a6f-be03-9bbb09825892/78a0791dfec2f91bbcc9448784156e5b.png";
+import logo from "../assets/images/bbg-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -30,7 +29,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center mb-6">
               <img
-                  src={logoUrl}
+                  src={logo}
                   alt="BILLBASH Logo"
                   className="h-16 w-auto mr-2 filter brightness-0 invert"
               />
