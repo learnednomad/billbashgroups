@@ -4,6 +4,8 @@ import { Facebook, Twitter, Linkedin, Instagram, Youtube, ArrowRight, Home, Truc
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+const logoUrl = "https://storage.googleapis.com/hostinger-horizons-assets-prod/35ba3e5a-041e-4a6f-be03-9bbb09825892/78a0791dfec2f91bbcc9448784156e5b.png";
+
 const Footer = () => {
   const quickLinks = [
     { label: "Home", path: "/" },
@@ -27,10 +29,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <Link to="/" className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-primary flex items-center justify-center mr-2">
-                <div className="w-6 h-6 border-2 border-white"></div>
-              </div>
-              <span className="font-bold text-xl text-white">BILL BASH GROUP</span>
+              <img
+                  src={logoUrl}
+                  alt="BILLBASH Logo"
+                  className="h-16 w-auto mr-2 filter brightness-0 invert"
+              />
             </Link>
             <p className="text-gray-400 mb-6 text-sm">
               Your trusted partner in real estate, truck importation, farming, and spare parts sales.
