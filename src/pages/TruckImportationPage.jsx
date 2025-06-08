@@ -30,7 +30,7 @@ const TruckImportationPage = () => {
     subtitleDesktop: "Sourcing, inspecting, and delivering quality commercial vehicles and motorcycles for your business success.",
     subtitleMobile: "Quality Vehicles, Delivered Worldwide",
     ctaText: "Explore Our Vehicles",
-    ctaLink: "#vehicletypes",
+    ctaLink: "/vehicle-listings",
     showIntro: false,
     heroImage: {
       alt: "Fleet of various imported vehicles including trucks, tankers, and motorcycles at a modern port facility",
