@@ -7,7 +7,8 @@ const AboutPage = () => {
   const yearFounded = 2013; // Assuming founded in 2013 as per previous stats
   return (
     <div className="bg-gradient-to-b from-gray-50 via-white to-gray-50">
-      <section className="py-20 md:py-32 bg-primary/5 text-center">
+
+  <section className="py-20 md:py-32 bg-gray-300 text-center">
         <div className="container mx-auto px-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
