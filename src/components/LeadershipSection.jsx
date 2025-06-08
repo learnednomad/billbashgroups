@@ -20,11 +20,11 @@ const LeadershipSection = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <span className="text-sm font-semibold uppercase text-red-600 tracking-wider mb-2 block">
-                        Leadership Team
-                    </span>
+                    {/*<span className="text-sm font-semibold uppercase text-red-600 tracking-wider mb-2 block">*/}
+                    {/*    Leadership Team*/}
+                    {/*</span>*/}
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                        Meet Our Leaders
+                        Meet Our Team
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Experienced professionals driving innovation and excellence across all our business sectors
