@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HomePage from "@/pages/HomePage";
 import AboutPage from "@/pages/AboutPage";
+import LeadershipPage from "@/pages/LeadershipPage";
 import ServicesPage from "@/pages/ServicesPage";
 import BusinessesOverviewPage from "@/pages/BusinessesOverviewPage";
 import BusinessShowcasePage from "@/pages/BusinessShowcasePage";
@@ -41,6 +42,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/about/leadership" element={<LeadershipPage />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/businesses" element={<BusinessesOverviewPage />} />
                 <Route path="/businesses/real-estate" element={<RealEstatePage />} />
