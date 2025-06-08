@@ -23,7 +23,7 @@ const Stats = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact by the Numbers</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Decades of dedication, diverse expertise, and a commitment to client success define Bill Bash Group.
+            Decades of dedication, diverse expertise, and a commitment to client success define Billbash Industries. We are a leading supplier of high-quality spare parts and equipment for heavy vehicles and equipment across multiple industries. We are committed to providing our customers with the highest quality products and services.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

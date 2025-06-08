@@ -67,7 +67,7 @@ const BusinessesSection = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Businesses</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Bill Bash Group offers a diverse portfolio of services, each delivered with a commitment to quality, reliability, and customer satisfaction. Explore our key sectors.
+              Billbash Industries offers a diverse portfolio of services, each delivered with a commitment to quality, reliability, and customer satisfaction. Explore our key sectors.
             </p>
           </motion.div>
 
@@ -84,7 +84,7 @@ const BusinessesSection = () => {
                   <Card className="business-card h-full flex flex-col overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
                     <div className="h-48 overflow-hidden">
                       <img
-                          alt={`${business.title} service by Bill Bash Group`}
+                          alt={`${business.title} service by Billbash Industries`}
                           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                           src={business.image}
                       />

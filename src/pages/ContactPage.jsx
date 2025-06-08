@@ -136,7 +136,7 @@ const ContactPage = () => {
 
               <div className="bg-white p-8 rounded-xl shadow-xl">
                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Connect With Us</h3>
-                 <p className="text-gray-600 mb-4">Follow us on social media for the latest updates and news from Bill Bash Group.</p>
+                <p className="text-gray-600 mb-4">Follow us on social media for the latest updates and news from Billbash Industries.</p>
                  <div className="flex space-x-4">
                     <a href="#" className="text-primary hover:text-primary/80"><svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96s4.46 9.96 9.96 9.96c5.5 0 9.96-4.46 9.96-9.96S17.5 2.04 12 2.04zm4.37 6.88c.3.3.3.77 0 1.06L12 14.94l-4.37-4.37c-.3-.3-.3-.77 0-1.06s.77-.3 1.06 0L12 12.81l3.31-3.31c.3-.3.77-.3 1.06 0z"/></svg></a>
                     <a href="#" className="text-primary hover:text-primary/80"><svg viewBox="0 0 24 24" className="h-8 w-8" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.77.86-2.76 1.05C18.4 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.27 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.48.75 2.79 1.9 3.55-.7-.02-1.37-.22-1.95-.5v.03c0 2.07 1.48 3.8 3.44 4.2-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.08.55 1.7 2.14 2.93 4.02 2.96C5.76 18.59 4.02 19.3 2 19.3c-.33 0-.66-.02-.98-.06 1.92 1.23 4.2 1.96 6.68 1.96 8.08 0 12.5-6.7 12.5-12.5 0-.19 0-.38-.01-.57.85-.62 1.59-1.39 2.18-2.27z"/></svg></a>

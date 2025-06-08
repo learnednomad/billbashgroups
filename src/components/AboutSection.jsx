@@ -18,15 +18,15 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <span className="text-primary font-semibold mb-2 block">About Bill Bash Group</span>
+            <span className="text-primary font-semibold mb-2 block">About Billbash Industries Limited</span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Your Trusted Partner Across Industries
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Bill Bash Group is a dynamic and diversified company with a strong presence in real estate, truck importation, farming, and spare parts sales. Our commitment to excellence and integrity drives us to provide reliable solutions that support individuals, businesses, and communities.
+              Billbash Industries Limited is a dynamic and diversified company with a strong presence in real estate, truck importation, farming, and spare parts sales. Our commitment to excellence and integrity drives us to provide reliable solutions that support individuals, businesses, and communities.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Whether you're seeking premium properties, sourcing quality trucks, investing in sustainable agriculture, or in need of durable spare parts, Bill Bash Group delivers with professionalism, transparency, and a deep understanding of your needs.
+              Whether you're seeking premium properties, sourcing quality trucks, investing in sustainable agriculture, or in need of durable spare parts, Billbash Industries delivers with professionalism, transparency, and a deep understanding of your needs.
             </p>
             <Button asChild className="bg-primary text-white hover:bg-primary/90 text-base px-8 py-3">
               <Link to="/about">
@@ -43,7 +43,7 @@ const AboutSection = () => {
             className="relative"
           >
             <img 
-              alt="Collage of Bill Bash Group's services: real estate, trucks, farming, spare parts"
+              alt="Collage of Billbash Industries' services: real estate, trucks, farming, spare parts"
               className="rounded-xl shadow-2xl w-full h-auto object-cover"
              src={TruckAboutImage} />
             <div className="absolute -top-8 -left-8 w-24 h-24 bg-primary/10 rounded-full -z-10 hidden md:block"></div>

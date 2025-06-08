@@ -1,40 +1,41 @@
-
 import React from "react";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import BusinessesSection from "@/components/BusinessesSection";
-import Stats from "@/components/Stats"; 
+import Stats from "@/components/Stats";
 import CtaSection from "@/components/CtaSection";
 
 const HomePage = () => {
-  const heroData = {
-    title: "BillBash Group",
-    subtitleDesktop: "Real Estate | Truck Importation | Farming | Spare Parts",
-    subtitleMobile: "Reliable services in real estate, truck importation, farming & spare parts — all in one place.",
-    introParagraph: "Welcome to BillBash Group — your trusted partner in real estate, truck importation, farming, and spare parts sales. With a strong commitment to excellence and integrity, we provide reliable solutions across multiple industries to support individuals, businesses, and communities. Whether you're seeking premium properties, sourcing quality trucks, investing in agriculture, or in need of durable spare parts, Bill Bash Group delivers with professionalism, transparency, and a deep understanding of your needs.",
-    ctaText: "Explore Our Services",
-    ctaLink: "/about", 
-    showIntro: true,
-    heroImage: {
-      alt: "Panoramic view of BillBash Group's diverse operations including modern city skyline for real estate, a fleet of trucks, a lush green farm, and an organized spare parts warehouse",
-      description: "Diverse operations of Bill Bash Group"
-    }
-  };
+    const heroData = {
+        title: "Billbash Industries Limited",
+        subtitleDesktop: "Real Estate | Truck Importation | Farming | Spare Parts",
+        subtitleMobile:
+            "Reliable services in real estate, truck importation, farming & spare parts — all in one place.",
+        introParagraph:
+            "Welcome to Billbash Industries Limited — your trusted partner in real estate, truck importation, farming, and spare parts sales. With an unwavering commitment to quality, integrity, and customer satisfaction, we deliver dependable solutions across key industries. Whether you're searching for premium properties, importing durable trucks, exploring sustainable agriculture, or sourcing top-quality spare parts, Billbash Industries Limited stands ready to serve your needs with professionalism and expertise.",
+        ctaText: "Explore Our Services",
+        ctaLink: "/about",
+        showIntro: true,
+        heroImage: {
+            alt: "Panoramic view of Billbash Industries Limited's diverse operations including a modern skyline, a fleet of trucks, green farmland, and a well-organized spare parts warehouse",
+            description: "Diverse operations of Billbash Industries Limited",
+        },
+    };
 
-  return (
-    <>
-      <Hero pageData={heroData} />
-      <AboutSection />
-      <BusinessesSection />
-      <Stats />
-      <CtaSection 
-        title="Ready to Partner with Us?"
-        description="Discover how BillBash Group can support your goals. Contact us today for tailored solutions and expert advice."
-        buttonText="Get in Touch"
-        buttonLink="/contact"
-      />
-    </>
-  );
+    return (
+        <>
+            <Hero pageData={heroData} />
+            <AboutSection />
+            <BusinessesSection />
+            <Stats />
+            <CtaSection
+                title="Ready to Partner with Us?"
+                description="Discover how Billbash Industries Limited can support your goals. Contact us today for tailored solutions and expert guidance."
+                buttonText="Get in Touch"
+                buttonLink="/contact"
+            />
+        </>
+    );
 };
 
 export default HomePage;
