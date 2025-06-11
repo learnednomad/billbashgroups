@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import BusinessesSection from "@/components/BusinessesSection";
@@ -95,25 +96,29 @@ const ServicesPreviewSection = () => {
             icon: Building2,
             title: "Real Estate Solutions",
             description: "From residential properties to commercial developments, we provide comprehensive real estate services.",
-            features: ["Property Sales", "Rental Management", "Development Projects", "Investment Consulting"]
+            features: ["Property Sales", "Rental Management", "Development Projects", "Investment Consulting"],
+            link: "/real-estate"
         },
         {
             icon: Truck,
-            title: "Truck Importation",
+            title: "Vehicle Importation",
             description: "Reliable importation of high-quality trucks and commercial vehicles from trusted global suppliers.",
-            features: ["Quality Assurance", "Customs Clearance", "Fleet Solutions", "After-Sales Support"]
+            features: ["Quality Assurance", "Customs Clearance", "Fleet Solutions", "After-Sales Support"],
+            link: "/truck-importation"
         },
         {
             icon: Wheat,
             title: "Agricultural Operations",
             description: "Sustainable farming practices with modern agricultural techniques for optimal crop production.",
-            features: ["Crop Farming", "Livestock Management", "Agri-Tech Solutions", "Supply Chain"]
+            features: ["Crop Farming", "Livestock Management", "Agri-Tech Solutions", "Supply Chain"],
+            link: "/farming"
         },
         {
             icon: Settings,
             title: "Spare Parts Supply",
             description: "Premium quality spare parts for trucks and heavy machinery with fast delivery and competitive pricing.",
-            features: ["Genuine Parts", "Fast Delivery", "Technical Support", "Bulk Orders"]
+            features: ["Genuine Parts", "Fast Delivery", "Technical Support", "Bulk Orders"],
+            link: "/spare-parts"
         }
     ];
 
@@ -157,7 +162,7 @@ const ServicesPreviewSection = () => {
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
                                     <p className="text-gray-300 mb-4">{service.description}</p>
-                                    <ul className="space-y-2">
+                                    <ul className="space-y-2 mb-6">
                                         {service.features.map((feature, idx) => (
                                             <li key={idx} className="flex items-center text-sm text-gray-400">
                                                 <CheckCircle className="h-4 w-4 text-red-400 mr-2 flex-shrink-0" />
@@ -165,6 +170,13 @@ const ServicesPreviewSection = () => {
                                             </li>
                                         ))}
                                     </ul>
+                                    <Link
+                                        to={service.link}
+                                        className="inline-flex items-center text-red-400 hover:text-red-300 font-medium transition-colors duration-200"
+                                    >
+                                        Learn More
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>
@@ -179,7 +191,7 @@ const ServicesPreviewSection = () => {
 const TestimonialsSection = () => {
     const testimonials = [
         {
-            quote: "Billbash Industries has been instrumental in our company's growth. Their truck importation services are unmatched in quality and reliability.",
+            quote: "Billbash Industries has been instrumental in our company's growth. Their vehicle importation services are unmatched in quality and reliability.",
             author: "Ahmed Hassan",
             position: "Fleet Manager",
             company: "Northern Logistics"
@@ -266,21 +278,29 @@ const EnhancedCtaSection = () => (
                     Let's discuss how we can help you achieve your goals with our comprehensive solutions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <motion.button
+                    <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200 inline-flex items-center justify-center"
                     >
-                        Get Started Today
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                    </motion.button>
-                    <motion.button
+                        <Link
+                            to="/contact"
+                            className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200 inline-flex items-center justify-center"
+                        >
+                            Get Started Today
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </Link>
+                    </motion.div>
+                    <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-all duration-200"
                     >
-                        Learn More About Us
-                    </motion.button>
+                        <Link
+                            to="/about"
+                            className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-all duration-200 inline-flex items-center justify-center"
+                        >
+                            Learn More About Us
+                        </Link>
+                    </motion.div>
                 </div>
             </motion.div>
         </div>
@@ -290,14 +310,90 @@ const EnhancedCtaSection = () => (
     </section>
 );
 
+// Quick Access Section
+const QuickAccessSection = () => {
+    const quickLinks = [
+        {
+            title: "Browse Vehicles",
+            description: "Explore our current vehicle inventory",
+            icon: <Truck className="h-8 w-8" />,
+            link: "/vehicle-listings",
+            color: "bg-blue-500"
+        },
+        {
+            title: "Import Process",
+            description: "Learn about our importation services",
+            icon: <Settings className="h-8 w-8" />,
+            link: "/truck-importation",
+            color: "bg-green-500"
+        },
+        {
+            title: "Our Leadership",
+            description: "Meet the team behind our success",
+            icon: <Users className="h-8 w-8" />,
+            link: "/about/leadership",
+            color: "bg-purple-500"
+        },
+        {
+            title: "Get Quote",
+            description: "Request a personalized quote",
+            icon: <ArrowRight className="h-8 w-8" />,
+            link: "/contact",
+            color: "bg-red-500"
+        }
+    ];
+
+    return (
+        <section className="py-16 bg-white">
+            <div className="container mx-auto px-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-12"
+                >
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Quick Access</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Get started with our most popular services and resources
+                    </p>
+                </motion.div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {quickLinks.map((item, index) => (
+                        <motion.div
+                            key={item.title}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                        >
+                            <Link
+                                to={item.link}
+                                className="block bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group"
+                            >
+                                <div className={`inline-flex items-center justify-center w-12 h-12 ${item.color} rounded-xl mb-4 text-white group-hover:scale-110 transition-transform duration-300`}>
+                                    {item.icon}
+                                </div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                                <p className="text-gray-600 text-sm">{item.description}</p>
+                            </Link>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const HomePage = () => {
     const heroData = {
         title: "Billbash Industries Limited",
-        subtitleDesktop: "Real Estate | Truck Importation | Farming | Spare Parts",
+        subtitleDesktop: "Real Estate | Vehicle Importation | Farming | Spare Parts",
         subtitleMobile:
-            "Reliable services in real estate, truck importation, farming & spare parts — all in one place.",
+            "Reliable services in real estate, vehicle importation, farming & spare parts — all in one place.",
         introParagraph:
-            "Welcome to Billbash Industries Limited — your trusted partner in real estate, truck importation, farming, and spare parts sales. With an unwavering commitment to quality, integrity, and customer satisfaction, we deliver dependable solutions across key industries. Whether you're searching for premium properties, importing durable trucks, exploring sustainable agriculture, or sourcing top-quality spare parts, Billbash Industries Limited stands ready to serve your needs with professionalism and expertise.",
+            "Welcome to Billbash Industries Limited — your trusted partner in real estate, vehicle importation, farming, and spare parts sales. With an unwavering commitment to quality, integrity, and customer satisfaction, we deliver dependable solutions across key industries. Whether you're searching for premium properties, importing durable vehicles, exploring sustainable agriculture, or sourcing top-quality spare parts, Billbash Industries Limited stands ready to serve your needs with professionalism and expertise.",
         ctaText: "Discover Our Solutions",
         ctaLink: "/about",
         showIntro: true,
@@ -312,9 +408,9 @@ const HomePage = () => {
             <Hero pageData={heroData} />
             <AboutSection />
             <WhyChooseUsSection />
-            {/*<BusinessesSection />*/}
+            <QuickAccessSection />
             <ServicesPreviewSection />
-            {/*<Stats />*/}
+            <Stats />
             <TestimonialsSection />
             <EnhancedCtaSection />
         </div>
